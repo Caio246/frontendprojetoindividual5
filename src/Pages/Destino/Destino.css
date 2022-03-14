@@ -1,0 +1,30 @@
+label,
+textarea {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 1px;
+  width: 1900px;
+}
+
+textarea {
+  padding: 1px 0;
+  margin: 4px;
+  width: 500px;
+  text-align: right;
+  text-justify: distribute;
+}
+
+input {
+  display: inline-block;
+  font-size: 3em;
+  background-color: #d95323;
+  border-radius: 3%;
+  color: white;
+  padding: 10px 100px;
+  margin: 5px 2px;
+  cursor: pointer;
+}

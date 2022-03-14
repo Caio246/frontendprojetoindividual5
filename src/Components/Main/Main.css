@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(/src/Components/img/BG-site-Caio_1920x1080.png);
+  background-repeat: no-repeat;
+}
+
+main {
+  display: flex;
+  justify-content: flex-end;
+}
+
+section {
+  display: inline-block;
+  padding: 100px 0;
+  margin: 9px;
+  width: 700px;
+  text-align: right;
+  text-justify: distribute;
+}
+
+h1 {
+  display: inline-block;
+  color: #d95323;
+  font: 300 2.5rem 'Nunito', sans-serif;
+  margin-bottom: 1rem;
+  text-transform: none;
+}
+
+h2 {
+  text-align: center;
+  font: 1.6rem 'Nunito', sans-serif;
+  margin-bottom: 3rem;
+}
+
+form {
+  display: inline-block;
+  text-align: right;
+  text-justify: distribute;
+}
+
+container-contato {
+  display: inline-block;
+  justify-content: flex-end;
+  padding: 100px 0;
+  width: 471px;
+  height: 870px;
+}
+
+img {
+  object-fit: cover;
+  height: 200px;
+  width: 350px;
+}
+
+footer i {
+  color: #088c8c;
+}
+
+footer strong {
+  color: #088c8c;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #59429d;
+  border-radius: 5px;
+}
+
+.carrossel {
+  box-shadow: 2px 2px 4px black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 260px;
+}
+
+.container-c {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translate(0);
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10rem;
+}
+
+.div-do-meio-direita {
+  display: flex;
+  color: #088c8c;
+}
+
+.avatar {
+  display: flex;
+  border-radius: 50px;
+  color: #d95323;
+}
+
+.navbar {
+  padding: 70px;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding-right: 1.2rem;
+  color: #088c8c;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.about {
+  display: flex;
+  width: 100px;
+}
+.button {
+  background-color: #d95323;
+  border: none;
+  border-radius: 3%;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.icons {
+  color: #d95323;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-content: unset;
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+.grupo:before,
+.grupo:after {
+  display: table;
+}
+
+/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+.grupo:after {
+  clear: both;
+}
+
+/* Elementos de classe "campo" */
+.campo {
+  margin-bottom: 1em;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label {
+  margin-bottom: 0.2em;
+  color: #088c8c;
+  display: block;
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo {
+  float: left;
+  margin-right: 1em;
+}
+
+/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.campo input[type='text'],
+.campo input[type='email'],
+.campo select,
+.campo textarea {
+  padding: 0.2em;
+  border: 1px solid #088c8c;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option {
+  padding-right: 1em;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  background: #e0e0f8;
+}
+
+/* Elemento de classe "botao" */
+.botao {
+  font-size: 1.2em;
+  background: #d95323;
+  border: 0;
+  margin-bottom: 1em;
+  color: #ffffff;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 73.5%;
+  left: 32%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+  background: #ccbbff;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao,
+select {
+  cursor: pointer;
+}

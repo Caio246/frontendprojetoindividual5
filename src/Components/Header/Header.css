@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(/src/Components/img/BG-site-Caio_1920x1080.png);
+  background-repeat: no-repeat;
+}
+
+main {
+  display: flex;
+  justify-content: flex-end;
+}
+
+section {
+  display: inline-block;
+  padding: 100px 0;
+  margin: 9px;
+  width: 700px;
+  text-align: right;
+  text-justify: distribute;
+}
+
+h1 {
+  display: inline-block;
+  color: #d95323;
+  font: 300 2.5rem 'Nunito', sans-serif;
+  margin-bottom: 1rem;
+  text-transform: none;
+}
+
+h2 {
+  text-align: center;
+  font: 1.6rem 'Nunito', sans-serif;
+  margin-bottom: 3rem;
+}
+
+form {
+  display: inline-block;
+  text-align: right;
+  text-justify: distribute;
+}
+
+container-contato {
+  display: inline-block;
+  justify-content: flex-end;
+  padding: 100px 0;
+  width: 471px;
+  height: 870px;
+}
+
+img {
+  object-fit: cover;
+  height: 200px;
+  width: 350px;
+}
+
+footer i {
+  color: #088c8c;
+}
+
+footer strong {
+  color: #088c8c;
+}
+
+.carrossel {
+  box-shadow: 2px 2px 4px black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 260px;
+}
+
+.container-c {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translate(0);
+}
+
+.div-do-meio-direita {
+  display: flex;
+  color: #088c8c;
+}
+
+.avatar {
+  display: flex;
+  border-radius: 50px;
+  color: #d95323;
+}
+
+.navbar {
+  padding: 70px;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding-right: 1.2rem;
+  color: #088c8c;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.button {
+  background-color: #d95323;
+  border: none;
+  border-radius: 3%;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.icons {
+  color: #d95323;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-content: unset;
+}
+
+.botao {
+  font-size: 1.2em;
+  background: #d95323;
+  border: 0;
+  margin-bottom: 1em;
+  color: #ffffff;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 73.5%;
+  left: 32%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
