@@ -4,16 +4,29 @@ import Footer from "../../Components/Footer/Footer"
 import Header from "../../Components/Header/Header"
 import api from '../../api'
 import './Destino.css'
+import axios from "axios"
 import { useEffect, useState } from "react"
 
 /* eslint-disable react/jsx-no-undef */
 export default () => {
 
-  /*  const [destino, setDestino] = useState([])
-  
-    useEffect(() => {
-      api.get("/Destino").then((res) => { setDestino(res.data) }).catch((erro) => console.log(erro))
-    }, []) */
+  const [destino, setDestino] = useState({
+
+    nome: "",
+    telefone: "",
+    email: "",
+    localdepartida: "",
+    localdedestino: "",
+    datadepartida: "",
+    datadechegada: ""
+  })
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    api.post('/destino', destino)
+  }
+
+  useEffect(() => { console.log(destino) }, [destino])
 
   return (
     <>
@@ -23,45 +36,45 @@ export default () => {
         <form className="col s12">
           <div className="row">
             <div className="input-field col s6">
-              <input id="nome_completo" type="text" className="validate" />
+              <input id="nome_completo" type="text" className="validate" onChange={(event) => setDestino({ ...destino, nome: event.target.value })} />
               <label for="nome_completo">Nome Completo: </label>
             </div>
 
             <div className="input-field col s6">
-              <input id="telefone" type="text" className="validate" />
+              <input id="telefone" type="text" className="validate" onChange={(event) => setDestino({ ...destino, telefone: event.target.value })} />
               <label for="telefone">Telefone: </label>
             </div>
 
             <div className="input-field col s6">
-              <input id="CPF" type="text" className="validate" />
+              <input id="CPF" type="text" className="validate" onChange={(event) => setDestino({ ...destino, cpf: event.target.value })} />
               <label for="CPF">CPF: </label>
             </div>
 
             <div className="input-field col s6">
-              <input id="e_mail" type="text" className="validate" />
+              <input id="e_mail" type="text" className="validate" onChange={(event) => setDestino({ ...destino, email: event.target.value })} />
               <label for="e_mail">E-mail: </label>
             </div>
 
             <div className="input-field col s6">
-              <input id="data_partida" type="text" className="validate" />
-              <label for="data_partida">Destino de partida:</label>
+              <input id="destino_de_partida" type="text" className="validate" onChange={(event) => setDestino({ ...destino, localdepartida: event.target.value })} />
+              <label for="destino_de_partida">Destino de partida:</label>
             </div>
 
             <div className="input-field col s6">
-              <input id="data_partida" type="text" className="validate" />
+              <input id="data_de_partida" type="text" className="validate" onChange={(event) => setDestino({ ...destino, datadepartida: event.target.value })} />
               <label for="data_partida">Data de partida:</label>
             </div>
 
             <div className="input-field col s6">
-              <input id="destino_chegada" type="text" className="validate" />
+              <input id="destino_de_chegada" type="text" className="validate" onChange={(event) => setDestino({ ...destino, localdedestino: event.target.value })} />
               <label for="destino_chegada">Destino de chegada:</label>
             </div>
 
             <div className="input-field col s6">
-              <input id="data_chegada" type="text" className="validate" />
-              <label for="data_chegada">Data de chegada:</label>
+              <input id="data_de_chegada" type="text" className="validate" onChange={(event) => setDestino({ ...destino, datadechegada: event.target.value })} />
+              <label for="data_de_chegada">Data de chegada:</label>
             </div>
-            <input type="submit" value="ENVIAR" /><form></form>
+            <input onClick={handleSubmit} type="submit" value="ENVIAR" /><form></form>
           </div>
         </form >
 
