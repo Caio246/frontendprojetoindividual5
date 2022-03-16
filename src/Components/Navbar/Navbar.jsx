@@ -2,7 +2,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
 import { Link } from "react-router-dom";
-import './Header.css'
+import './Navbar.css'
 export default () => {
   return (
     <header className="navbar">
@@ -37,5 +37,3 @@ export default () => {
   );
 }
 
-/* INSERT INTO DESTINO VALUES (1,12.3,321,356,'caiostun@gmail.com','RJ','MG','Caio',123456)
-    SELECT * FROM DESTINO*/

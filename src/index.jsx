@@ -12,7 +12,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" excat element={<Home />}></Route>
+        <Route path="/" element={<Home />}></Route>
         <Route path="/Destino" element={<Destino />}></Route>
         <Route path="/Contato" element={<Contato />}></Route>
         <Route path="/Promocoes" element={<Promocoes />}></Route>

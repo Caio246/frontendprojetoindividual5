@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable import/no-anonymous-default-export */
 import Footer from "../../Components/Footer/Footer"
-import Header from "../../Components/Header/Header"
+import Navbar from "../../Components/Navbar/Navbar"
 import cidade from "../../Components/img/cidade.jpg"
 import deserto from "../../Components/img/deserto.jpg"
 import india from "../../Components/img/india.jpg"
@@ -9,8 +9,8 @@ import trem from "../../Components/img/trem.jpg"
 /* eslint-disable react/jsx-no-undef */
 export default () => {
   return (
-    <>
-      <Header></Header>
+    <container>
+      <Navbar />
       <div>
         <div class="carrossel">
           <div class="container-c" ig="img">
@@ -21,7 +21,8 @@ export default () => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
-    </>
+      <Footer />
+    </container>
+
   )
 }

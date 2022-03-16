@@ -7,7 +7,13 @@ textarea {
 label {
   display: inline-block;
   margin-bottom: 1px;
-  width: 1900px;
+}
+
+container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
 }
 
 textarea {
@@ -30,9 +36,15 @@ input {
 }
 
 .row {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  padding-right: 100px;
+}
+
+form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
 }

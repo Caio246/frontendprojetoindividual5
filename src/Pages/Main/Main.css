@@ -1,0 +1,20 @@
+p {
+  max-width: 700px;
+  text-align: justify;
+}
+
+.containerMain {
+  width: 700px;
+  height: 400px;
+  margin-top: 330px;
+}
+
+.agencia {
+  width: 100%;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 30px;
+}

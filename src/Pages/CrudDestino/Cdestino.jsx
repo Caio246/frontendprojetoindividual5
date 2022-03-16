@@ -1,15 +1,15 @@
 /* eslint-disable react/jsx-no-undef */
 import Footer from "../../Components/Footer/Footer"
-import Header from "../../Components/Header/Header"
+import Navbar from "../../Components/Navbar/Navbar"
 import { Table } from "react-bootstrap"
-import './style.css'
+
 
 /* eslint-disable import/no-anonymous-default-export */
 
 export default () => {
   return (
     <div className="crud-destino">
-      <Header />
+      <Navbar />
       <Table striped bordered hover>
         <thead>
           <tr>
