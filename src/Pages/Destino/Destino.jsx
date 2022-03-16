@@ -6,6 +6,7 @@ import api from '../../api'
 import './Destino.css'
 import axios from "axios"
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom";
 
 /* eslint-disable react/jsx-no-undef */
 export default () => {
@@ -14,10 +15,11 @@ export default () => {
 
     nome: "",
     telefone: "",
+    cpf: "",
     email: "",
     localdepartida: "",
-    localdedestino: "",
     datadepartida: "",
+    localdedestino: "",
     datadechegada: ""
   })
 
@@ -30,7 +32,8 @@ export default () => {
 
   return (
     <>
-      <Header></Header>
+      <Header />
+
       <div className="row">
         <form className="col s12">
           <div className="row">
@@ -56,7 +59,9 @@ export default () => {
 
             <div className="input-field col s6">
               <label for="destino_de_partida">Destino de partida:</label>
-              <input id="destino_de_partida" type="text" className="validate" onChange={(event) => setDestino({ ...destino, localdepartida: event.target.value })} />
+              <input id="destino_de_partida" type="text" className="validate" onChange={(event) => setDestino({ ...destino, localdepartida: event.target.value }
+              )} />
+
             </div>
 
             <div className="input-field col s6">
@@ -77,8 +82,13 @@ export default () => {
           </div>
         </form >
 
-      </div >
-      <Footer></Footer>
+        <button className="">
+          <Link to="/Cdestino">Consultar</Link>
+        </button>
+
+      </div>
+
+      <Footer />
     </>
   )
 }
