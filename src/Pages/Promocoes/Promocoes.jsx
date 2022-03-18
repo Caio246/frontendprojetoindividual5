@@ -6,13 +6,14 @@ import cidade from "../../Components/img/cidade.jpg"
 import deserto from "../../Components/img/deserto.jpg"
 import india from "../../Components/img/india.jpg"
 import trem from "../../Components/img/trem.jpg"
+import './Promocoes.css'
 /* eslint-disable react/jsx-no-undef */
 export default () => {
   return (
-    <container>
+    <>
       <Navbar />
-      <div>
-        <div class="carrossel">
+      <div class="carrossel">
+        <div>
           <div class="container-c" ig="img">
             <img src={cidade} />
             <img src={deserto} />
@@ -22,7 +23,6 @@ export default () => {
         </div>
       </div>
       <Footer />
-    </container>
-
+    </>
   )
 }

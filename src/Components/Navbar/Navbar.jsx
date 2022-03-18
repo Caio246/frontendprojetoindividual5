@@ -8,8 +8,6 @@ export default () => {
     <header className="navbar">
       <div className="avatar">
         <div className="avatar">
-          <i className="fas fa-plane fa-3x"></i>
-
           <div><h1>AGÊNCIA DE VIAGENS ETHERNUM</h1></div>
         </div>
       </div >

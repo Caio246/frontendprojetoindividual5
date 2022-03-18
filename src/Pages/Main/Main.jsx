@@ -2,7 +2,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Main.css";
 
 export default () => {
@@ -19,9 +18,6 @@ export default () => {
           Expedia, etc. A Ethernum ajuda você a encontrar informações sobre sua
           viagem para Paris, incluindo o hotel ideal para você!
         </p>
-        <Link to="#">
-          <div className="button">Saiba Mais!</div>
-        </Link>
       </div>
     </container>
   );
